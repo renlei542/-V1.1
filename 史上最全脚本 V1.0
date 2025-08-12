@@ -1,0 +1,10 @@
+local musicIDs = {4760592831, 140242130183594, 106786416076383}
+local playTime = 5 
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://"..musicIDs[1] 
+sound.Parent = workspace
+sound:Play()
+
+task.wait(playTime)
+game.Players.LocalPlayer:Kick("我让你开挂😡")
