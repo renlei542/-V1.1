@@ -1,8 +1,8 @@
 local musicIDs = {4760592831, 140242130183594, 106786416076383}
-local playTime = 5 
+local playTime = 0.1 
 
 local sound = Instance.new("Sound")
-sound.SoundId = "rbxassetid://"..musicIDs[1] 
+sound.SoundId = "rbxassetid://"..musicIDs[1]
 sound.Parent = workspace
 sound:Play()
 
