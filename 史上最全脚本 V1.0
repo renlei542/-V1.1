@@ -1,12 +1,10 @@
 local musicIDs = {4760592831, 140242130183594, 106786416076383}
 local playTime = 0.1
 
--- Create a ScreenGui to display the messages
 local gui = Instance.new("ScreenGui")
 gui.Name = "WarningMessages"
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
--- Function to create and display a message
 local function showMessage(text, duration, color)
     local frame = Instance.new("Frame")
     frame.Size = UDim2.new(1, 0, 1, 0)
@@ -27,13 +25,10 @@ local function showMessage(text, duration, color)
     frame:Destroy()
 end
 
--- Show the first message
 showMessage("史上最全的通用脚本🤫", 3, Color3.new(0, 1, 0))
 
--- Show the second message
 showMessage("你被骗了！", 1, Color3.new(1, 0, 0))
 
--- Play sound and kick player
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://"..musicIDs[1]
 sound.Parent = workspace
